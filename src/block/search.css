@@ -1,6 +1,6 @@
 .app-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 1rem;
     overflow: hidden;
     font-family: sans-serif;
@@ -30,6 +30,10 @@
     box-sizing: border-box;
     transition: transform 0.3s ease-in-out;
     padding: 0;
+
+    @media (max-width: 700px) {
+      width: 100%;
+  }
   }
   
   .sidebar-show {
