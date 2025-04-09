@@ -1,13 +1,12 @@
 body::before {
     content: '';
-    position: relative;
+    position: absolute;
     top: 0; left: 0;
     width: 100%;
     height: 100vh;
-    background-image: url(../public/99px_ru_wallpaper_367809_zelenaja_dolina_s_nebolshimi_derevnjami_i_izvivaushejsja_rekoj.jpg);
+    background-image: url(/bg4k.jpg);
     background-size: cover;
     background-position: center;
-    filter: brightness(0.6); /* затемнение */
     z-index: -1;
     overflow: hidden;
     margin: 0;
