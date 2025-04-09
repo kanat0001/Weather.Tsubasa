@@ -25,6 +25,7 @@ const Sidebar = ({ onClose, city, setCity, weather, getWeather }) => {
           type="text"
           value={city}
           placeholder="введите город"
+          spellCheck="false"
           onChange={(e) => setCity(e.target.value)}
           onKeyDown={(e)=>{
             if((e.key) === 'Enter'){
@@ -46,7 +47,7 @@ const Sidebar = ({ onClose, city, setCity, weather, getWeather }) => {
           <p className='details'><span>feelslike</span><span>{weather.feelslike}°</span> </p>
           <p className='details'><span>pressure</span><span>{weather.pressure}mb</span> </p>
           <p className='details'><span>wind dir</span><span>{weather.windDir}</span></p>
-          <p className='details'><span>visibility</span><span>{weather.visibility}</span> </p>
+          <p className='details'><span>visibility</span><span>{weather.visibility}km</span> </p>
           
         </>
       )}
